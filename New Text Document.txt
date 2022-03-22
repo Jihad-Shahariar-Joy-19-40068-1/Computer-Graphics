@@ -1,0 +1,748 @@
+glBegin(GL_TRIANGLES);
+glColor3ub(0,255,0);
+glVertex2f(650,430);
+glVertex2f(655,435);
+glVertex2f(660,430);
+
+glColor3ub(0,255,0);
+glVertex2f(660,430);
+glVertex2f(665,425);
+glVertex2f(660,420);
+
+glColor3ub(0,255,0);
+glVertex2f(660,420);
+glVertex2f(655,415);
+glVertex2f(650,420);
+
+glColor3ub(0,255,0);
+glVertex2f(650,420);
+glVertex2f(650,425);
+glVertex2f(650,430);
+glEnd();
+
+
+
+
+glBegin(GL_TRIANGLES);
+glColor3ub(169,169,169);
+
+glVertex2i(410,315);
+glVertex2i(970,315);
+glVertex2i(690,390);
+
+glColor3ub(10, 10, 10);
+
+glVertex2i(450,315);
+glVertex2i(930,315);
+glVertex2i(695,430);
+
+glColor3ub(169,169,169);
+
+glVertex2i(490,315);
+glVertex2i(890,315);
+glVertex2i(695,470);
+
+glColor3ub(10, 10, 10);
+
+glVertex2i(530,315);
+glVertex2i(850,315);
+glVertex2i(695,510);
+
+glColor3ub(169,169,169);
+
+glVertex2i(570,315);
+glVertex2i(810,315);
+glVertex2i(695,550);
+
+glColor3ub(10, 10, 10);
+
+glVertex2i(610,315);
+glVertex2i(770,315);
+glVertex2i(695,590);
+
+glColor3ub(169,169,169);
+
+glVertex2i(650,315);
+glVertex2i(730,315);
+glVertex2i(695,630);
+
+glColor3ub(10, 10, 10);
+
+glVertex2i(655,315);
+glVertex2i(725,315);
+glVertex2i(695,415);
+
+
+//////////////////////////////////______?????????????????????????????????//
+//-------------------Flowers--------------------//
+
+//    glBegin(GL_POLYGON);
+//    glColor3ub(245, 25, 10);
+//
+//    glVertex2i(650,440);
+//    glVertex2i(650,445);
+//    glVertex2i(655,450);
+//    glVertex2i(660,445);
+//    glVertex2i(660,440);
+//    glVertex2i(665,445);
+//    glVertex2i(670,445);
+//    glVertex2i(670,440);
+//    glVertex2i(667.5,435);
+//    glVertex2i(670,435);
+//    glVertex2i(675,430);
+//    glVertex2i(670,425);
+//    glVertex2i(667.5,425);
+//    glVertex2i(670,420);
+//    glVertex2i(670,415);
+//    glVertex2i(665,415);
+//    glVertex2i(660,422.5);
+//    glVertex2i(660,415);
+//    glVertex2i(655,410);
+//    glVertex2i(650,415);
+//    glVertex2i(650,422.5);
+//    glVertex2i(645,415);
+//    glVertex2i(640,415);
+//    glVertex2i(640,420);
+//    glVertex2i(645,425);
+//    glVertex2i(640,425);
+//    glVertex2i(635,430);
+//    glVertex2i(640,435);
+//    glVertex2i(645,435);
+//    glVertex2i(640,440);
+//    glVertex2i(640,445);
+//    glVertex2i(645,445);
+//
+//    glEnd();
+
+    glBegin(GL_POLYGON);
+    glColor3ub(245, 25, 10);
+
+//    glVertex2i(650,440);
+//    glVertex2i(650,445);
+//    glVertex2i(655,450);
+//    glVertex2i(660,445);
+//    glVertex2i(660,440);
+//    glVertex2i(665,445);
+
+    glEnd();
+
+/////////////////////////////////////////////////////////////////////
+void tank()
+{
+
+ //tank-start
+
+    //tankbody1
+
+   glBegin(GL_POLYGON);
+    glColor3ub(50,56,6);
+    glVertex2i(525,325);
+    glVertex2i(535,325);
+    glVertex2i(715,325);
+    glVertex2i(725,325);
+    glVertex2i(715,360);
+    glVertex2i(535,360);
+
+    glEnd();
+
+    //tankbody2
+
+    glBegin(GL_QUADS);
+    glVertex2i(565,350);
+    glVertex2i(675,350);
+    glVertex2i(675,390);
+    glVertex2i(565,390);
+    //tankhead
+
+    glColor3ub(34,36,34);
+    glVertex2i(600,390);
+    glVertex2i(640,390);
+    glVertex2i(640,400);
+    glVertex2i(600,400);
+
+     //tankgun
+     glColor3ub(34, 36, 34);
+    glVertex2i(675,365);
+    glVertex2i(755,370);
+    glVertex2i(755,380);
+    glVertex2i(675,385);
+
+    glEnd();
+
+
+
+    //tankbase
+
+    glBegin(GL_POLYGON);
+  glColor3ub(79,68,31);
+  for(int i=180;i<=360;i++)
+    {
+        float angle= i*3.1416/180;
+    glVertex2f(625+cos(angle)*90,325+sin(angle)*35);
+    }
+    glEnd();
+
+    //wheel-1
+
+      glBegin(GL_POLYGON);
+      glColor3ub(22, 23, 22);
+     for(int i=0;i<=360;i++)
+    {
+        float angle= i*3.1416/180;
+
+    glVertex2f(555+cos(angle)*10,315+sin(angle)*10);
+    }
+    glEnd();
+
+
+//wheel-2
+  glBegin(GL_POLYGON);
+      glColor3ub(22, 23, 22);
+     for(int i=0;i<=360;i++)
+    {
+        float angle= i*3.1416/180;
+    glVertex2f(690+cos(angle)*10,315+sin(angle)*10);
+
+    }
+    glEnd();
+
+//whell3
+      glBegin(GL_POLYGON);
+      glColor3ub(22, 23, 22);
+     for(int i=0;i<=360;i++)
+    {
+        float angle= i*3.1416/180;
+
+    glVertex2f(583+cos(angle)*10,310+sin(angle)*10);
+
+    }
+    glEnd();
+
+
+//wheel-4
+  glBegin(GL_POLYGON);
+      glColor3ub(22, 23, 22);
+     for(int i=0;i<=360;i++)
+    {
+        float angle= i*3.1416/180;
+
+    glVertex2f(611+cos(angle)*10,305+sin(angle)*10);
+
+    }
+
+    glEnd();
+
+    //wheel-5
+
+  glBegin(GL_POLYGON);
+      glColor3ub(22, 23, 22);
+     for(int i=0;i<=360;i++)
+    {
+        float angle= i*3.1416/180;
+
+    glVertex2f(639+cos(angle)*10,305+sin(angle)*10);
+
+    }
+
+    glEnd();
+    //whell-6
+
+  glBegin(GL_POLYGON);
+      glColor3ub(22, 23, 22);
+     for(int i=0;i<=360;i++)
+    {
+        float angle= i*3.1416/180;
+
+    glVertex2f(667+cos(angle)*10,306+sin(angle)*10);
+    }
+
+    glEnd();               //tank-end
+
+
+}
+
+
+
+
+
+
+////////////////////////////////////////////////////////////////////
+
+
+test
+GraphicsLab1Test
+19-40068-1-Lab1Task
+19-40068-1-Lab2Task
+19-40068-1-Lab3Task
+Batman logo.text and BatLogo same (from internet)
+Batman_Ast (mid assignment)
+Human_Ast (mid assignment)
+Mid_Task1  (mid performance(time limited-not 100% done))
+Mid_Task2  (mid performance(time limited-not 100% done))
+BonusTask  (task after mid term for a bonus mark on mid term)
+Final.............
+FinalTask1
+FinalAnimation1(given by sir and we modified it)
+sample 1 (misssing-given by sir does not run)
+sample 2 (given by sir) 
+fanRotate(given by sir and we modified it) 
+Clock (Last task)
+
+
+
+
+which will be generate* automatically
+which will be generated automatically
+
+There * two primary user
+There are two primary user 
+
+which will* discuss* below the sections
+which will be discussed below the sections
+
+They can payment* there* dues from another place
+They can pay their dues from another place 
+
+acca @Sayidur Rahman vai? mane lagbe na probably, but sir er sample er moto ki feature selection er ta korcen?
+
+
+At initial state, registration must be done. Customer must be logged in to the system after registration to book a room. Room and facilities must be chosen by the customer. If the customer is not satisfied with the room,facilities and budget etc. the booking can be cancelled, otherwise if affordable, the customer must confirm the booking. The customer will be telephone called by the hotel manager in order to confirm the booking. The hotel will be visited by the customer according to their booked date and time. Finally, payment will be confirmed by the accountant.
+
+
+
+Each customer has unique id as well as name and mobile number and his/her account is linked to the hotel which denotes to the management system. Customer can check in or out and book room also make payment. Admin can control also change the hotel system who is linked with hotel and has unique id, name and email address. 
+Manager has also unique id and email address who receives customer information from admin through the system, receives booking from custoemer and confirms the booking by calling them. Every room has its own number and id which refers to two types of rooms: 1.single and 2.double which has two types of rent and facilities. 
+Hotel has its own unique id ,name and address and it utilizes the management system which is linked with all the other users of the whole process.
+Accountant receives the payment from the customer after the customer checks out through the system. Accountant also need to save the data of payment by using his/her unique information saved in the system.
+
+
+
+def depth_first_search(problem,LIFO=-1): 
+
+                                                    return graph_search(problem,LIFO) 
+
+  
+
+                                                   def breadth_first_search(problem,FIFO=0): 
+
+                                                    return graph_search(problem,FIFO) 
+
+  
+
+                                                def best_first_search(problem,f,pop_index=0): 
+
+  
+
+                                                    node=Node(problem.inital) 
+
+                                                    if problem.goal_test(node.state): return node 
+
+                                                    frontier=Queue(pop_index) 
+
+                                                    frontier.sortAppend(node,f) 
+
+                                                    explored=set( 
+
+                                                        while frontier: 
+
+                                                            frontier.printQueue() 
+
+                                                            node=frontier.pop() 
+
+                                                           print("Parent:",node.state, 
+
+                                                          "Childs:",[child.state for child in node.expand(problem)]) 
+
+                                                    if problem.goal_test(node.state): 
+
+                                                        return node 
+
+                                                    explored.add(node.state) 
+
+                                                    for child in node.expand(problem): 
+
+                                                        if child,state not in expolored and child in in frontier: frontier.sortAppend(child,f) 
+
+                                                        return None 
+
+  
+
+                                                    def uniform_cost_search(problem): 
+
+                                                        return best_first_search(problem,lambda node:node.path_cost)
+
+
+
+1)What is the report Title?
+	Challenges exposed by COVID-19 for technology in education
+
+2)What is the Problem in this section?
+	As we know, for covid-19 all educational institutes are closed for several months and almost all of them have switched into online class. This report is all about what is online or distant learning, it's problems,challenges, how to overcome this and the oppertunities we have because of the situation.
+
+3)What are the Solution you offer ? 
+	As for the solutions, first, all the students and teachers must learn how to properly use the tools and softwares for online classes. The need of a good device is also important. Not everyone can afford a device for online learning, so those who have extra devices that can be donated, they should donate that device. One device and many family members, this situation must be resolved. Slow internet connections and internet price problems should also be solved. etc.
+
+4) tell me something about your Abstract?
+	The covid-19 outbreak which is evolving daily  has been declared as a pandemic by the WHO. It is hampering out daily lives as well as the economy and education of the whole world. For this crisis, almost all the educational institutes of the world have switched to online remote or online learning by using a suitable device and the necessary softwares to conduct regular classes. 
+
+5) tell me something about Methodology?
+	Well , I mostly wrote the explainations of the keywords here. How covid-19 is hindering our education system. The purposes of distant or online learning. The use of Information and Communication Technology for the purpose of education. The challanges and oppertunities we have are all described here.
+
+6) tell me something about Results? 
+	I made some chiche in the results section by showing most of the results of my survey, like the impact on students and the satisfaction level of students by online classes then,,, what decvice ans software they use , how much time they spend etc. Also, after WHO officially declared the name of corona virys and lebeled as a pandemic, the drastic raise of users in 'coursera' improved . that is also shown here.
+
+
+
+
+
+import javax.swing.*;
+import java.awt.*;
+import java.awt.event.*;
+public class Calculator implements ActionListener 
+{
+   private static JTextField inputNumber;
+   Calculator(){}
+   public static void main(String[] args) 
+   {
+      createWindow();
+   }
+   private static void createWindow() {          
+      JFrame frame = new JFrame("Calculator");
+      frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+      createUI(frame);
+      frame.setSize(400,300);            
+      frame.setLocationRelativeTo(null);
+      frame.setVisible(true);
+   }
+   private static void createUI(JFrame frame) {
+      JPanel panel = new JPanel();
+      Calculator calculator = new Calculator();
+      GridBagLayout layout = new GridBagLayout();          
+      GridBagConstraints gbc = new GridBagConstraints();
+      panel.setLayout(layout);
+	  panel.setBackground(Color.black);
+
+      inputNumber = new JTextField(5);        
+      JButton button0 = new JButton("0");	  
+	  JButton button1 = new JButton("1");
+      JButton button2 = new JButton("2");
+      JButton button3 = new JButton("3");
+      JButton button4 = new JButton("4");
+	  JButton button5 = new JButton("5");
+      JButton button6 = new JButton("6");
+	  JButton button7 = new JButton("7");
+      JButton button8 = new JButton("8");
+	  JButton button9 = new JButton("9");
+	  JButton buttoni = new JButton("i");
+	  JButton buttonbackward = new JButton("<-");
+	  JButton buttonClear = new JButton("C");
+	  JButton buttonce = new JButton("CE");
+      JButton buttonPlus = new JButton("+");
+	  JButton buttonMinus = new JButton("-");
+      JButton buttonDivide = new JButton("/");
+	  JButton buttonMultiply = new JButton("*");
+      JButton buttonDot = new JButton(".");
+      JButton buttonEquals = new JButton("=");
+	  JButton buttonpm = new JButton("+-");
+
+      button1.addActionListener(calculator);
+	  button2.addActionListener(calculator);
+      button3.addActionListener(calculator);
+	  button4.addActionListener(calculator);
+      button5.addActionListener(calculator);
+	  button6.addActionListener(calculator);
+      button7.addActionListener(calculator);
+	  button8.addActionListener(calculator);
+      button9.addActionListener(calculator);
+	  button0.addActionListener(calculator);
+      buttoni.addActionListener(calculator);
+	  buttonbackward.addActionListener(calculator);
+	  buttonce.addActionListener(calculator);
+	  buttonPlus.addActionListener(calculator);buttonMinus.addActionListener(calculator);
+      buttonDivide.addActionListener(calculator);buttonMultiply.addActionListener(calculator);
+      buttonClear.addActionListener(calculator);buttonDot.addActionListener(calculator);
+      buttonEquals.addActionListener(calculator);buttonpm.addActionListener(calculator);
+      gbc.fill = GridBagConstraints.HORIZONTAL;
+	  gbc.gridx = 0; gbc.gridy = 0; panel.add(inputNumber, gbc);        
+      gbc.gridx = 0; gbc.gridy = 1; panel.add(buttoni, gbc);        
+      gbc.gridx = 1; gbc.gridy = 1; panel.add(buttonbackward, gbc);
+      gbc.gridx = 2; gbc.gridy = 1; panel.add(buttonClear, gbc);
+      gbc.gridx = 3; gbc.gridy = 1; panel.add(buttonce, gbc);
+      gbc.gridx = 0; gbc.gridy = 2; panel.add(button7, gbc);
+      gbc.gridx = 1; gbc.gridy = 2; panel.add(button8, gbc);
+      gbc.gridx = 2; gbc.gridy = 2; panel.add(button9, gbc);
+      gbc.gridx = 3; gbc.gridy = 2; panel.add(buttonDivide, gbc);
+      gbc.gridx = 0; gbc.gridy = 3; panel.add(button4, gbc);
+      gbc.gridx = 1; gbc.gridy = 3; panel.add(button5, gbc);
+      gbc.gridx = 2; gbc.gridy = 3; panel.add(button6, gbc);
+      gbc.gridx = 3; gbc.gridy = 3; panel.add(buttonMultiply, gbc);
+      gbc.gridx = 0; gbc.gridy = 4; panel.add(button1, gbc);
+      gbc.gridx = 1; gbc.gridy = 4; panel.add(button2, gbc);
+      gbc.gridx = 2; gbc.gridy = 4; panel.add(button3, gbc);
+      gbc.gridx = 3; gbc.gridy = 4; panel.add(buttonMinus, gbc);
+      gbc.gridx = 0; gbc.gridy = 5; panel.add(button0, gbc);
+      gbc.gridx = 1; gbc.gridy = 5; panel.add(buttonpm, gbc);
+      gbc.gridx = 2; gbc.gridy = 5; panel.add(buttonDot, gbc);
+      gbc.gridx = 3; gbc.gridy = 5; panel.add(buttonPlus, gbc);
+
+      gbc.gridx = 2; gbc.gridy = 6; panel.add(buttonEquals, gbc);
+      frame.getContentPane().add(panel, BorderLayout.CENTER);        
+   }
+   public void actionPerformed(ActionEvent e) {
+      String command = e.getActionCommand();
+      if (command.charAt(0) == 'C') 
+	  {                      
+         inputNumber.setText("");
+      }
+	  else if (command.charAt(0) == '=') 
+	  {                    
+         inputNumber.setText(evaluate(inputNumber.getText()));
+      }
+	  else
+	  {                                
+         inputNumber.setText(inputNumber.getText() + command);
+      }
+   }
+   public static String evaluate(String expression) 
+   {
+      char[] arr = expression.toCharArray();
+      String x = "";String y = "";String operator = "";
+      double result = 0;
+      for (int i = 0; i < arr.length; i++) 
+	  {
+         if (arr[i] >= '0' && arr[i] <= '9' || arr[i] == '.') 
+		 {
+            if(operator.isEmpty())
+			{
+               x += arr[i];
+            }
+			else
+			{
+               y += arr[i];
+            }
+         }  
+         if(arr[i] == '+' || arr[i] == '-' || arr[i] == '/' || arr[i] == '*') 
+		 {
+            operator += arr[i];
+         }
+      }
+      if (operator.equals("+"))
+         result = (Double.parseDouble(x) + Double.parseDouble(y));
+      else if (operator.equals("-"))
+         result = (Double.parseDouble(x) - Double.parseDouble(y));
+      else if (operator.equals("/"))
+         result = (Double.parseDouble(x) / Double.parseDouble(y));
+      else
+         result = (Double.parseDouble(x) * Double.parseDouble(y));          
+      return x + operator + y + "=" +result;
+   }    
+}
+
+
+Dear Mr. kamal, 
+	This is in regards to the brand new Sony Bravia 43 inch HD LED television I bought from your store last day. 
+	The television was dilivered today but there was a crack on the schreen and the remote control was missing. This is really unexpected from your renowned store.
+
+Clearly, I am extremely disappointed by this purchase and expect you to replace the television at the earliest. I am enclosing a copy of bill for your reference.
+
+Thank you
+
+Yours sincerely
+Mr. Hasan
+
+
+Dear Mr. Hasan, 
+
+	Thank you for your letter for complaining about the smart television you ordered.
+	I was sorry to hear that there was a crack on the schreen and the remote control was missing. 
+	Unfortunately we do not have the information how this incident happend. 
+	However, I am pleased  to inform you that in 24 hours, we will have your  smart television set with remote control replaced and dilivered to you. 
+	I would like to apologise for the inconvenience you experienced. Please do not hesitate to contact me if you have any further queries. 
+
+Yours sincerely 
+Sales Manager.
+Sony Electronics.
+
+
+
+
+
+I am a Graduate
+I am looking for ......
+
+Personal details 
+Address : Betagi 8.no ward,Barguna.
+Email : jihadshahariarjoy2211@gmail.com 
+Phone : 017________ 
+Date of birth : 27-Nov-2000. 
+
+Education and Qualifications 
+S.S.C-
+H.S.C-
+University
+
+Work experience 
+null
+
+Skills 
+Languages : Fluent in English, Bangla.
+Computers : Windows 10/8/7.
+
+Interests : 
+
+
+
+
+
+
+sayarani.das@bracbank.com
+
+
+
+
+
+
+Repeated (backward) substitution method
+Expanding the recurrence by substitution and noticing a pattern (this is not a strictly formal proof).
+
+Time complexity of an algorithm quantifies the amount of time taken by an algorithm to run as a function of the length of the input. Similarly, Space complexity of an algorithm quantifies the amount of space or memory taken by an algorithm to run as a function of the length of the input.
+
+The Activity Selection Problem is an optimization problem which deals with the selection of non-conflicting activities that needs to be executed by a single person or machine in a given time frame.
+
+Asymptotic notations are the mathematical notations used to describe the running time of an algorithm when the input tends towards a particular value or a limiting value. For example: In bubble sort, when the input array is already sorted, the time taken by the algorithm is linear i.e. the best case.
+
+
+ল অফ ডিমান্ড - when price of product will increase, quantity demand will decrease
+
+ল অফ সাপ্লাই - when price of product will increase, supply will increase
+
+demand curve is drawn with x axis as quantity demand and in y axis as price...
+
+when demand curve changes it shifts upward or downward.....when quantity demand changes it changes along the demand curve....
+
+Logic of inverter : ?
+Inverters can be constructed using a single NMOS transistor or a single PMOS transistor coupled with a resistor. ... An inverter circuit serves as the basic logic gate to swap between those two voltage levels.
+
+Fan-in : Fan-in is the number of inputs a logic gate can handle.
+Fanout: In digital electronics, the fan-out is the number of gate inputs driven by the output of another single logic gate.
+
+Boolean expression: A Boolean expression is an expression used in programming languages that produces a Boolean value when evaluated. 
+
+Boolean algebra : In mathematics and mathematical logic, Boolean algebra is the branch of algebra in which the values of the variables are the truth values true and false, usually denoted 1 and 0, respectively.
+
+Cmos??? :  Complementary metal–oxide–semiconductor, also known as complementary-symmetry metal–oxide–semiconductor, is a type of metal–oxide–semiconductor field-effect transistor fabrication process that uses complementary and symmetrical pairs of p-type and n-type MOSFETs for logic functions. 
+
+A static CMOS gate is a combination of two networks, called the pull-up network (PUN) and the pull-down network (PDN).
+
+Comperator : A comparator circuit compares two voltages and outputs either a 1 (the voltage at the plus side; VDD in the illustration) or a 0 (the voltage at the negative side) to indicate which is larger.
+
+Adder : An adder is a digital circuit that performs addition of numbers. 
+
+Decoder: A decoder is a circuit that changes a code into a set of signals.
+
+MOSFET : Metal Oxide Silicon Field Effect Transistor or Metal Oxide Semiconductor Field Effect Transistor. This is also called as IGFET meaning Insulated Gate Field Effect Transistor. The FET is operated in both depletion and enhancement modes of operation.
+
+
+
+For as long as humans have existed, we've looked at other animals and wondered what it would be like to be able to do what they can do. Scientists and inventors have studied characteristics of things in nature and came up with amazing technologies and products invented as a result of studying nature. Inventors studied the flight of birds with a desire to fly like them up in the sky and travel long distances over oceans, mountains, plains and deserts. Scientists studied birds and invented bullet trains which have beak-like front fashioned like that of the kingfisher. Studying the whales, scientists came up with an idea to invent the submarine, so as to sail under the vast oceans. Bats and dolphins use echolocation and their sonar system, respectively, for navigation and finding food. Using this phenomenon, scientists have developed robots that work by using sensors to allow them to move without hitting anything. Termites build earthen mounds which are well-ventilated, having a lot of slits and holes for aeration purposes. Besides high external temperature, the mounds have moderate temperature inside. Scientists have invented buildings like that too. These ones are just some examples, but there are many inventions that were inspired by animals or nature.
+
+
+A spherometer consists of a tripod with the three legs tipped by steel
+points and forming an equilateral triangle with sides of 50 mm. A
+micrometer screw, the tip of which is the point to be measured, passes
+through the centre of the tripod. A vertical rule indicates the height h
+of the measured point above a plane defined by the tips of the three
+legs. The height of the measured point can be read off to an accuracy of
+1 μm with the aid of a circular scale that rotates along with the micrometer screw.
+
+From the height h of a spherical surface above a point on a plane defined by the corners of an equilateral triangle, the radius of curvature R of the spherical surface may be determined. This can be done for both convex and concave curvatures of the sphere.
+
+___________________________________________________________________
+Algorithm: It is a set of instructions that describes how to get something done.
+
+Dynamic: 
+Dynamic programming is a technique for solving problems with overlapping sub problems. EX:fibonacci series, mcm,Knapsack,lcs.
+
+P Problem
+Jegulo detarministic machine dara Polynomial time ba tar theka kom shomoye solve kora jai.
+Deterministic mechine: one action at a time.
+
+NP: 
+NP stands for Non-deterministic Polynomial time.NP is the set of decision problems 
+for which the problem instances, where the answer is "yes", have proofs verifiable in 
+polynomial time by a deterministic Turing machine.
+NON Deterministic mechine: more than one action at a time.
+
+NP hard : 
+In computational complexity theory, NP-hardness (non-deterministic polynomial-time 
+hardness) is the defining property of a class of problems that are informally "at least 
+as hard as the hardest problems in NP".
+
+NP complete:
+The complexity class of decision problems for which answers can be checked for 
+correctness, given a certificate, by an algorithm whose run time is polynomial in the 
+size of the input (that is, it is NP) and no other NP problem is more than a 
+polynomial factor harder. 
+
+Krush - algorithm runs faster in spaese graph    both used for minimun spanning tree
+Prims -  algorithm runs faster in dense graph
+Kruskal's algorithm's time complexity is O(E log V), V being the number of vertices. Prim's algorithm gives connected component as well as it works only on connected graph. Prim's algorithm runs faster in dense graphs. Kruskal's algorithm runs faster in sparse graphs
+MINIMUM SPANNING TREE: 
+A minimum spanning tree is a special kind of tree that minimizes the lengths (or “weights”) of the edges of the tree.
+
+
+2 ways to represent a graph: adjacency list, adjacency list
+Adjacency list: An adjacency list is a list of lists. Each list corresponds to a vertex u and contains a list of edges (u, v) that originate from u.
+Adjacency list: adjacency list is a collection of unordered lists used to represent a finite graph. Each list describes the set of neighbors of a vertex in the graph.
+
+tree is collection domain
+forest is a set of tree
+
+Graph vs tree:
+Graph and tree are the non-linear data structure which is used to solve various complex problems. A graph is a group of vertices and edges where an edge connects a pair of vertices whereas a tree is considered as a minimally connected graph which must be connected and free from loops.
+
+Strongly connected graph:
+A graph is said to be strongly connected if every vertex is reachable from every other vertex.
+
+LCS : The longest common subsequence problem is the problem of finding the longest subsequence common to all sequences in a set of sequences.
+
+difference: LCM, LCM: 
+The LCM of two integers is the smallest whole number that appears in both of their times tables, that is, the smallest integer that is a multiple of both numbers. 
+
+Topological sort.
+A topological sort takes a directed acyclic graph and produces a linear ordering of all its vertices such that if the graph
+Why is not possible to do Tropological sort?
+Topological Sorting is not possible if the graph is not a directed acyclic graph
+Directed acyclic graph is a directed graph with no directed cycles.
+
+difference between 0/1 knapsack and fractional knapsack
+The “fractional knapsack” is the one in which we can take objects in fractions, i.e, in decimals (in floating points) whereas the “0/1 knapsack” is the one in which we can take objects in whole numbers (in interger value)
+
+purpose of kruskal's algorithm
+Kruskal's Algorithm is used to find the minimum spanning tree for a connected weighted graph. The main target of the algorithm is to find the subset of edges by using which, we can traverse every vertex of the graph
+
+Difference between dijkstra and floyd warshall algorithm
+The biggest difference is that Floyd's algorithm finds the shortest path between all vertices and Dijkstra's algorithm finds the shortest path between a single vertex and all other vertices. The space overhead for Dijkstra's algorithm is considerably more than that for Floyd's algorithm. 
+
+Difference between incidence matrix and adjacency matrix
+The adjacency matrix of a graph should be distinguished from its incidence matrix, a different matrix representation whose elements indicate whether vertex–edge pairs are incident or not, and its degree matrix, which contains information about the degree of each vertex.
+
+Purpose of matrix chain multiplication(MCM)
+It is an optimization problem. Given a sequence of matrices, the goal is to find the most efficient way to multiply these matrices.
+
+Non linear data structure : 
+It is a data structure in which data items are not stored linearly in the memory. 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
